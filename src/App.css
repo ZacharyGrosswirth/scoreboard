@@ -1,0 +1,95 @@
+.scoreboard-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(110deg, #FA4616 50%, #0C2340 50%);
+  /*linear-gradient(110deg, #FA4616 50%, #0C2340 50%);*/
+  /* background: linear-gradient(
+  110deg,
+  #FA4616 30%,
+  #FA4616 40%,
+  #0C2340 60%,
+  #0C2340 70%
+); */
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  color: #fff;
+}
+
+.team {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-team {
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.right-team {
+  top: 50%;
+  right: 9%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.team-info .team-name {
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+
+.team-info .team-record {
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+}
+
+.team-score {
+  font-size: 10rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.team-logo {
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.left-logo, .right-logo {
+  width: 400px; 
+  height: 310px;
+}
+
+.right-logo {
+  width: 310px;
+  height: 310px;
+}
+
+.game-status-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  padding: 1rem;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  text-align: center;
+  width: 350px;
+  height: 150px;
+}
+
+.game-time {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.game-detail {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
