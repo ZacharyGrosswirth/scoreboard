@@ -14,8 +14,8 @@ const App = () => {
       fetch("https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard")
         .then((res) => res.json())
         .then((data) => {
-          const leftTeamScore = data.events[0].competitions[0].competitors[0].score;
-          const rightTeamScore = data.events[0].competitions[0].competitors[1].score;
+          const leftTeamScore = data.events[0].competitions[0].competitors[1].score;
+          const rightTeamScore = data.events[0].competitions[0].competitors[0].score;
           const timeRemaining = data.events[0].competitions[0].status.displayClock;
           const half = data.events[0].competitions[0].status.period;
           setLeftTeamScore(leftTeamScore);
